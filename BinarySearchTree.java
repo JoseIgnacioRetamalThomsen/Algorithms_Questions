@@ -24,47 +24,7 @@ public class BinarySearchTree
 /*
  * Jose Retamal ,returning
  */
-class NodeInt
-{
-	int data;
-	NodeInt left;
-	NodeInt right;
-	public NodeInt(int i)
-	{
-		data =i;
-		left =null;
-		right =null;
-	}
-}
 
-class BinarySearchTreeInt
-{
-	NodeInt root;
-	
-	public boolean insert(int i)
-	{
-		root = insertNode(root,i);
-		return true;
-	}
-	private NodeInt insertNode(NodeInt n, int i)
-	{
-		if(n==null)
-		{
-			return new NodeInt(i);
-			
-		}
-		if(i<n.data)
-		{
-			n.left = insertNode(n.left,i);
-			
-		}else if(i>n.data)
-		{
-			n.right =insertNode(n.right,i);
-			
-		}
-		return n;
-	}
-}
 
 
 
